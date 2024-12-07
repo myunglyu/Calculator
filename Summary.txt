@@ -1,0 +1,33 @@
+1) Create a new project called CalculatorProject using the existing code: Program.cs and Calculator.cs.
+Test run the program.
+
+Complete.
+
+
+2) Summarize how the program handles various errors (e.g., divide-by-zero, unrecognized user input numbers,
+menu option (other than 'a', 's', 'm' and 'd').
+
+1. It handles the divide-by-zero by adding condition (num2 != 2). If the condition is not met, the calculation will not occur.
+The main program will print an error message if a valid double type value is not received.
+
+2. It handles unrecognized user inputs by using Regex.IsMatch. It compares the first argument with the following array and will return true
+if the first matches one of the elements. In this case, it takes a user input and determins if it is either a, s, m, d, e(exponent added).
+
+3. It also handles other unexpected errors by try and catch expression. The program will execute the process, and if any error occurs,
+it will catch the error message, display in console, and keep the program running instead of crashing.
+
+3) Add an extra exponent calculation function to the program.
+
+Complete.
+
+
+4) The Calculator class handles the bulk of the calculation work, and the Program class handles
+the user interface and error-capturing work. Would it be a good idea to move the user interface
+and error-capturing work from the Program class to the Calculator class? Please briefly discuss.
+
+I believe it is a common practice to divide the program into small modules.
+This practice will help manage codes better and easy to modify,
+helps preventing accidents such as deleting and unintended modifications,
+and makes it easy to collaborate with others.
+If a program is written in a single file, it will be harder to read, find a typo,
+and share codes and modify.

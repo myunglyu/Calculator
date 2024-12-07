@@ -1,0 +1,13 @@
+{
+  "Operations": [
+    {
+      "Operand1": 2.0,
+      "Operand2": 3.0,
+      "Operation": {
+        "Operand1": 10.0,
+        "Operand2": 3.0,
+        "Operation": null
+      }
+    }
+  ]
+}
